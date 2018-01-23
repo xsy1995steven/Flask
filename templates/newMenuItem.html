@@ -1,0 +1,28 @@
+<head>
+  <link rel=stylesheet type=text/css href="{{url_for('static',filename='styles.css')}}">
+</head>
+<h1>Make a new menu item</h1>
+
+<form method = "POST" action="#">
+  Name:</br>
+  <input type="text" name="name">
+</br>
+  Description:</br>
+  <input type="text" name="Description">
+</br>
+  Price:</br>
+  <input type="text" name="Price" >
+</br>
+
+Course:</br>
+<input type="radio" name="course" value="Appetizer">Appetizer</br>
+<input type="radio" name="course" value="Entree">Entree</br>
+<input type="radio" name="course" value="Dessert">Dessert</br>
+<input type="radio" name="course" value="Beverage">Beverage</br>
+  <input type="submit" value="create">
+</br>
+
+  <a href={{url_for("showMenu",restaurant_id=restaurant_id)}}>Cancel</a>
+
+
+</form>
